@@ -83,7 +83,7 @@ export class MyStack extends Stack {
     instance.node.addDependency(instanceConnectEndpoint);
 
     new CfnOutput(this, 'InstanceId', { value: instance.instanceId });
-    new CfnOutput(this, 'EIC Command', { value: `aws ec2-instance-connect ssh --instance-id ${instance.instanceId} --connect-tyep eice`});
+    new CfnOutput(this, 'EIC Command', { value: `aws ec2-instance-connect ssh --instance-id ${instance.instanceId} --connect-tyep eice` });
   }
 }
 
