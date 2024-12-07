@@ -12,7 +12,7 @@ exports[`Snapshot 1`] = `
             {
               "Ref": "InstanceC1063A87",
             },
-            " --connect-tyep eice",
+            " --connect-type eice",
           ],
         ],
       },
