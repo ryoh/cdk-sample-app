@@ -1,5 +1,6 @@
-import { App, Stack, StackProps } from 'aws-cdk-lib';
+import { App, CfnOutput, Stack, StackProps } from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
+import { CfnOutcome } from 'aws-cdk-lib/aws-frauddetector';
 import { Construct } from 'constructs';
 
 export class MyStack extends Stack {
@@ -81,6 +82,9 @@ export class MyStack extends Stack {
     eiceSecurityGroup.addEgressRule(instanceSecurityGroup, ec2.Port.SSH);
 
     instance.node.addDependency(instanceConnectEndpoint);
+
+    new CfnOutput(this, 'InstanceId', { value: instance.instanceId });
+    new CfnOutput(this, 'EIC Command', { value: `aws ec2-instance-connect ssh --instance-id ${instance.instanceId} --connect-tyep eice`});
   }
 }
 
