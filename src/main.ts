@@ -1,6 +1,5 @@
 import { App, CfnOutput, Stack, StackProps } from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
-import { CfnOutcome } from 'aws-cdk-lib/aws-frauddetector';
 import { Construct } from 'constructs';
 
 export class MyStack extends Stack {
