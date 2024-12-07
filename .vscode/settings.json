@@ -1,0 +1,6 @@
+{
+    "editor.fontFamily": "'FiraCode NF', Consolas, 'Courier New', monospace",
+    "eslint.format.enable": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+}

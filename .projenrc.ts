@@ -4,7 +4,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   defaultReleaseBranch: 'main',
   name: 'cdk-sample-app',
   projenrcTs: true,
-  dependabot: true,  
+  dependabot: true,
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
